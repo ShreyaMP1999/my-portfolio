@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nice background + typography defaults */
+body {
+  @apply bg-slate-950 text-slate-50 font-sans;
+}
+
+/* Fancy gradient text helper */
+.gradient-text {
+  @apply bg-gradient-to-r from-violet-400 via-sky-300 to-emerald-300 bg-clip-text text-transparent;
+}
+
+/* Subtle card hover effect */
+.hover-card {
+  @apply transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl;
+}
