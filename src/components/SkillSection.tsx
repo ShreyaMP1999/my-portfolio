@@ -2,10 +2,12 @@
 import React from "react";
 import { profile, SkillCategory } from "../data/profile";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 
 const SkillSection: React.FC = () => {
   return (
-    <section className="py-12 border-t border-slate-800">
+    <Reveal delay={0.1}>
+      <section className="py-12 border-t border-slate-800">
       <SectionHeading
         id="skills"
         title="Skills"
@@ -35,6 +37,8 @@ const SkillSection: React.FC = () => {
         ))}
       </div>
     </section>
+    </Reveal>
+    
   );
 };
 

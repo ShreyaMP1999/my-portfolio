@@ -2,9 +2,11 @@
 import React from "react";
 import { profile, EducationItem } from "../data/profile";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 
 const EducationSection: React.FC = () => {
   return (
+    <Reveal>
     <section className="py-12 border-t border-slate-800">
       <SectionHeading id="education" title="Education" />
 
@@ -28,6 +30,7 @@ const EducationSection: React.FC = () => {
         ))}
       </div>
     </section>
+    </Reveal>
   );
 };
 

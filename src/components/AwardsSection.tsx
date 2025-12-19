@@ -2,11 +2,13 @@
 import React from "react";
 import { profile, AwardItem } from "../data/profile";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 
 const AwardsSection: React.FC = () => {
   if (!profile.awards.length) return null;
 
   return (
+    <Reveal>
     <section className="py-12 border-t border-slate-800">
       <SectionHeading id="awards" title="Honors & Awards" />
 
@@ -25,6 +27,7 @@ const AwardsSection: React.FC = () => {
         ))}
       </div>
     </section>
+    </Reveal>
   );
 };
 

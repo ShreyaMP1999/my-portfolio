@@ -21,3 +21,15 @@ body {
 .hover-card {
   @apply transition-transform duration-200 hover:-translate-y-1 hover:shadow-xl;
 }
+
+@keyframes floatY {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-18px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}

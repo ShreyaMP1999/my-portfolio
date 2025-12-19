@@ -2,9 +2,11 @@
 import React from "react";
 import { profile } from "../data/profile";
 import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 
 const ContactSection: React.FC = () => {
   return (
+    <Reveal>
     <section id="contact" className="py-12 border-t border-slate-800">
       <SectionHeading
         title="Let’s Connect"
@@ -50,6 +52,7 @@ const ContactSection: React.FC = () => {
         </div>
       </div>
     </section>
+    </Reveal>
   );
 };
 

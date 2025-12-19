@@ -44,7 +44,7 @@ export type ExperienceItem = {
     phone: "+1 (312) 774-9512",
     linkedin: "https://www.linkedin.com/in/shreyamp/", // TODO: real link
     github: "https://github.com/ShreyaMP1999",         // TODO: real link
-    resumeUrl: "/Shreya_Padaganur_Resume.pdf", // put PDF in /public
+    resumeUrl: "https://drive.google.com/file/d/1i6TlsVqQbrZbSRLqOhjX_6Dda1MDHLkO/view?usp=share_link", // put PDF in /public
   
     summary:
       "Full-stack engineer with 3+ years building AI-driven healthcare, analytics, and cloud-native systems using Python, FastAPI, React, .NET Core, and BigQuery.",
@@ -83,30 +83,6 @@ export type ExperienceItem = {
   
     projects: [
       {
-        name: "Mindful_chatbot – Mental Health Assistant",
-        description:
-          "Conversational assistant that triages mental-health intent, performs sentiment analysis, and routes users to curated resources, built with FastAPI, OpenAI, and a responsive React UI.",
-        techStack: ["Python", "FastAPI", "OpenAI", "React", "SQLite"],
-        link: "https://github.com/your-user/theracare-ai",
-        highlightTags: ["AI", "Healthcare", "Full-Stack"],
-      },
-      {
-        name: "HealthConnect API – Hospital Appointment Platform",
-        description:
-          "Role-based REST API for hospital appointments with JWT auth, PostgreSQL, and Dockerized FastAPI microservices, ready for deployment on AWS.",
-        techStack: ["Python", "FastAPI", "PostgreSQL", "Docker", "JWT"],
-        link: "https://github.com/your-user/healthconnect-api",
-        highlightTags: ["Backend", "API", "Healthcare"],
-      },
-      {
-        name: "Personal Finance Tracker",
-        description:
-          "Secure personal finance dashboard with JWT auth, categorized spending, and analytics charts.",
-        techStack: ["React", "Node.js", "Express", "MongoDB"],
-        link: "https://github.com/your-user/personal-finance-tracker",
-        highlightTags: ["Full-Stack", "FinTech"],
-      },
-      {
         name: "Micro Observer(Mini DataDog) – Realtime App Monitoring",
         description:
           "Realtime dashboard for CPU, memory, alerting, and service health using React, Vite, WebSockets, and Node.js backend. Includes dynamic charts, alert acknowledgment and deployment-ready UI.",
@@ -114,7 +90,38 @@ export type ExperienceItem = {
         link: "https://github.com/ShreyaMP1999/micro-observer", // optional
         highlightTags: ["FrontEnd", "Monitoring", "DevTools"]
       },
-      
+      {
+        name: "Distributed Task Scheduler – Fault-Tolerant Job Orchestration",
+        description:
+          "Distributed task scheduling system with priority queues, automatic retries, dead-letter queue (DLQ), and stuck-task recovery. Built with FastAPI + Celery workers using Redis as broker and PostgreSQL for durable task state, packaged with Docker Compose for one-command local setup.",
+        techStack: ["Python", "FastAPI", "Celery", "Redis", "PostgreSQL", "Docker Compose"],
+        link: "https://github.com/ShreyaMP1999/distributed-task-scheduler", // update if different
+        highlightTags: ["Backend", "DistributedSystems", "Reliability"]
+      },   
+      {
+        name: "Mindful_chatbot – Mental Health Assistant",
+        description:
+          "Conversational assistant that triages mental-health intent, performs sentiment analysis, and routes users to curated resources, built with FastAPI, OpenAI, and a responsive React UI.",
+        techStack: ["Python", "FastAPI", "OpenAI", "React", "SQLite"],
+        link: "https://github.com/ShreyaMP1999/mindful_chatbot1-main",
+        highlightTags: ["AI", "Healthcare", "Full-Stack"],
+      },
+      {
+        name: "Intelligent Customer Support Chatbot",
+        description:
+          "An AI-powered customer support chatbot built with Next.js, MongoDB, and OpenAI GPT-4o/GPT-4o-mini.",
+        techStack: ["Next.js 14, React 18, Tailwind CSS, MongoDB"],
+        link: "https://github.com/ShreyaMP1999/IntelligentCustomerSupport",
+        highlightTags: ["Backend", "API", "Healthcare"],
+      },
+      {
+        name: "Personal Finance Tracker",
+        description:
+          "Secure personal finance dashboard with JWT auth, categorized spending, and analytics charts.",
+        techStack: ["React", "Node.js", "Express", "MongoDB"],
+        link: "https://github.com/ShreyaMP1999/Personal-Finance-tracker",
+        highlightTags: ["Full-Stack", "FinTech"],
+      }
     ] as ProjectItem[],
   
     education: [
@@ -154,7 +161,7 @@ export type ExperienceItem = {
   
     skills: [
       {
-        name: "Languages & Frameworks",
+        name: "Programming Languages",
         skills: [
           "Python",
           "Java",
@@ -162,37 +169,47 @@ export type ExperienceItem = {
           "JavaScript",
           "C++",
           "C#",
-          ".NET Core",
-          "React",
-          "Angular",
-          "Django",
-          "FastAPI",
-          "Node.js",
-          "Mendix",
+          ".NET Core","SQL",
         ],
       },
       {
-        name: "Data & Storage",
+      name: "Frontend Technologies",
+        skills: [
+          "React", "Angular", "HTML5", "CSS3",
+        ],
+      },
+      {
+        name: "Backend and APIs",
+          skills: [
+            "FastAPI", "Django", ".NET Core", "RESTful APIs", "GraphQL",
+          ],
+        },
+      {
+        name: "Data",
         skills: [
           "PostgreSQL",
           "MySQL",
-          "MongoDB",
           "SQLite",
           "Google BigQuery",
-          "Redis",
         ],
       },
       {
         name: "Cloud & DevOps",
-        skills: ["AWS", "Docker", "Linux", "GitHub Actions", "CI/CD"],
+        skills: ["AWS (EC2, S3, Lambda, IAM, ELB)", "Docker", "Linux", "CI/CD Pipelines (GitHub Actions)"],
       },
       {
         name: "AI, Data & Healthcare",
         skills: [
           "Prompt Engineering",
-          "LLM-based Automation",
-          "OpenAI API",
+          "LLM-based Integrations",
+          "Healthcare Informatics",
           "NLP Pipelines",
+        ],
+      },
+      {
+        name: "Testing and Tools",
+        skills: [
+          "PyTest", "JUnit", "Selenium", "Git", "GitHub", "Postman", "VS Code", "JIRA",
         ],
       },
     ] as SkillCategory[],
