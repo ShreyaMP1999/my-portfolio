@@ -88,7 +88,7 @@ export type ExperienceItem = {
           "Realtime dashboard for CPU, memory, alerting, and service health using React, Vite, WebSockets, and Node.js backend. Includes dynamic charts, alert acknowledgment and deployment-ready UI.",
         techStack: ["React", "TypeScript", "Node.js", "WebSockets", "Nivo"],
         link: "https://github.com/ShreyaMP1999/micro-observer", // optional
-        highlightTags: ["FrontEnd", "Monitoring", "DevTools"]
+        highlightTags: ["FrontEnd", "Monitoring", "DevToomls"]
       },
       {
         name: "Distributed Task Scheduler – Fault-Tolerant Job Orchestration",
