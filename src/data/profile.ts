@@ -98,14 +98,14 @@ export type ExperienceItem = {
         link: "https://github.com/ShreyaMP1999/distributed-task-scheduler", // update if different
         highlightTags: ["Backend", "DistributedSystems", "Reliability"]
       },   
-      // {
-      //   name: "Mindful_chatbot – Mental Health Assistant",
-      //   description:
-      //     "Conversational assistant that triages mental-health intent, performs sentiment analysis, and routes users to curated resources, built with FastAPI, OpenAI, and a responsive React UI.",
-      //   techStack: ["Python", "FastAPI", "OpenAI", "React", "SQLite"],
-      //   link: "https://github.com/ShreyaMP1999/mindful_chatbot1-main",
-      //   highlightTags: ["AI", "Healthcare", "Full-Stack"],
-      // },
+      {
+        name: "Mindful_chatbot – Mental Health Assistant",
+        description:
+          "Conversational assistant that triages mental-health intent, performs sentiment analysis, and routes users to curated resources, built with FastAPI, OpenAI, and a responsive React UI.",
+        techStack: ["Python", "FastAPI", "OpenAI", "React", "SQLite"],
+        link: "https://github.com/ShreyaMP1999/mindful_chatbot1-main",
+        highlightTags: ["AI", "Healthcare", "Full-Stack"],
+      },
       {
         name: "Intelligent Customer Support Chatbot",
         description:
