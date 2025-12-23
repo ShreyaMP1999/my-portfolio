@@ -44,7 +44,7 @@ export type ExperienceItem = {
     phone: "+1 (312) 774-9512",
     linkedin: "https://www.linkedin.com/in/shreyamp/", // TODO: real link
     github: "https://github.com/ShreyaMP1999",         // TODO: real link
-    resumeUrl: "https://drive.google.com/file/d/1i6TlsVqQbrZbSRLqOhjX_6Dda1MDHLkO/view?usp=share_link", // put PDF in /public
+    resumeUrl: "https://drive.google.com/file/d/13z3i3FMg9YNFlpdfuqTUgA0ZA6PC9xSY/view?usp=sharing", //  PDF /public
   
     summary:
       "Full-stack engineer with 3+ years building AI-driven healthcare, analytics, and cloud-native systems using Python, FastAPI, React, .NET Core, and BigQuery.",
