@@ -83,6 +83,14 @@ export type ExperienceItem = {
   
     projects: [
       {
+        name: "Distributed Payment Processing Simulator",
+        description:
+          "A distributed payment processing system built with Spring Boot that handles concurrent transactions with idempotency guarantees, Redis caching, and PostgreSQL persistence.",
+        techStack: ["Spring Boot", "Spring MVC", "JPA/Hibernate", "PostgreSQL", "Redis", "Docker", "Maven", "JUnit", "Mockito"],
+        link: "https://github.com/ShreyaMP1999/distributed-payment-sim",
+        highlightTags: ["Backend", "Finance", "DistributedSystems"],
+      },
+      {
         name: "Micro Observer(Mini DataDog) – Realtime App Monitoring",
         description:
           "Realtime dashboard for CPU, memory, alerting, and service health using React, Vite, WebSockets, and Node.js backend. Includes dynamic charts, alert acknowledgment and deployment-ready UI.",
