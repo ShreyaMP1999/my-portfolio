@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
           <motion.div variants={item} className="flex justify-center md:justify-start">
             <div className="relative w-44 h-44 md:w-52 md:h-52">
               <img
-                src="/shreya.jpg"
+                src="/Formalpic.png"
                 alt="Shreya Padaganur"
                 className="rounded-full w-full h-full object-cover border-2 border-sky-300/70 shadow-2xl"
               />
