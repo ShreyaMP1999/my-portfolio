@@ -1,34 +1,16 @@
-// src/components/AwardsSection.tsx
 import React from "react";
-import { profile, AwardItem } from "../data/profile";
+import { Award } from "lucide-react";
+import { profile } from "../data/profile";
 import SectionHeading from "./SectionHeading";
-import Reveal from "./Reveal";
 
-const AwardsSection: React.FC = () => {
-  if (!profile.awards.length) return null;
-
-  return (
-    <Reveal>
-    <section className="py-12 border-t border-slate-800">
-      <SectionHeading id="awards" title="Honors & Awards" />
-
-      <div className="grid gap-3 md:grid-cols-2">
-        {profile.awards.map((award: AwardItem, i) => (
-          <article
-            key={i}
-            className="hover-card rounded-xl border border-amber-500/40 bg-amber-500/10 p-4"
-          >
-            <h3 className="text-sm md:text-base font-semibold text-amber-100">
-              {award.title}
-            </h3>
-            <p className="text-xs md:text-sm text-amber-200">{award.org}</p>
-            <p className="text-[11px] text-amber-300/80">{award.year}</p>
-          </article>
-        ))}
+const AwardsSection: React.FC = () => (
+  <section id="awards" className="section-space border-t border-slate-200 bg-white">
+    <div className="container-width">
+      <SectionHeading title="Leadership beyond the code" subtitle="Service, representation, and recognition alongside my engineering work."/>
+      <div className="grid gap-6 md:grid-cols-3">
+        {profile.awards.map(a=><article key={a.title} className="border-t-2 border-emerald-500 pt-5"><Award className="mb-4 text-emerald-700" size={24}/><h3 className="font-semibold text-slate-950">{a.title}</h3><p className="mt-2 text-sm text-slate-600">{a.org}</p><p className="mt-1 text-sm text-slate-500">{a.year}</p></article>)}
       </div>
-    </section>
-    </Reveal>
-  );
-};
-
+    </div>
+  </section>
+);
 export default AwardsSection;
