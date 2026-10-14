@@ -1,37 +1,13 @@
-// src/components/EducationSection.tsx
 import React from "react";
-import { profile, EducationItem } from "../data/profile";
+import { GraduationCap } from "lucide-react";
+import { profile } from "../data/profile";
 import SectionHeading from "./SectionHeading";
-import Reveal from "./Reveal";
-
-const EducationSection: React.FC = () => {
-  return (
-    <Reveal>
-    <section className="py-12 border-t border-slate-800">
-      <SectionHeading id="education" title="Education" />
-
-      <div className="space-y-3">
-        {profile.education.map((ed: EducationItem) => (
-          <article
-            key={ed.school}
-            className="hover-card rounded-xl border border-slate-800 bg-slate-900/70 p-4"
-          >
-            <h3 className="text-sm md:text-base font-semibold text-slate-50">
-              {ed.school}
-            </h3>
-            <p className="text-xs md:text-sm text-slate-300">
-              {ed.degree} · {ed.location}
-            </p>
-            <p className="text-xs text-slate-400">
-              {ed.period}
-              {ed.gpa && <> · GPA {ed.gpa}</>}
-            </p>
-          </article>
-        ))}
-      </div>
-    </section>
-    </Reveal>
-  );
-};
-
+const EducationSection: React.FC = () => (
+  <section id="education" className="section-space border-t border-slate-200 bg-white">
+    <div className="container-width">
+      <SectionHeading title="Education"/>
+      <div className="grid gap-8 md:grid-cols-2">{profile.education.map(ed=><article key={ed.school} className="flex items-start gap-4"><GraduationCap size={28} className="shrink-0 text-cyan-700"/><div><h3 className="text-lg font-bold text-slate-950">{ed.degree}</h3><p className="mt-1 font-medium text-cyan-800">{ed.school}</p><p className="mt-2 text-sm text-slate-600">{ed.location} | {ed.period}</p><p className="mt-1 text-sm text-slate-500">GPA: {ed.gpa}</p></div></article>)}</div>
+    </div>
+  </section>
+);
 export default EducationSection;

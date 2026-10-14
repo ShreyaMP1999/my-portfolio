@@ -1,78 +1,26 @@
-// src/components/ExperienceSection.tsx
 import React, { useState } from "react";
-import { profile, ExperienceItem } from "../data/profile";
+import { ChevronDown, MapPin, Calendar } from "lucide-react";
+import { profile } from "../data/profile";
 import SectionHeading from "./SectionHeading";
-import Reveal from "./Reveal";
 
 const ExperienceSection: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const toggle = (idx: number) => {
-    setOpenIndex((prev) => (prev === idx ? null : idx));
-  };
-
-  return (
-    <Reveal>
-      <section className="py-12 border-t border-slate-800">
-        <SectionHeading
-          id="experience"
-          title="Experience"
-          subtitle="Roles where I shipped production code, not just class projects."
-        />
-
-        <div className="space-y-4">
-          {profile.experience.map((exp: ExperienceItem, idx) => {
-            const isOpen = openIndex === idx;
-
-            return (
-              <article
-                key={exp.company}
-                className="hover-card rounded-xl border border-slate-800 bg-slate-900/60 p-4 md:p-5"
-              >
-                <button
-                  type="button"
-                  onClick={() => toggle(idx)}
-                  className="flex w-full items-start justify-between gap-3 text-left"
-                >
-                  <div>
-                    <h3 className="text-base md:text-lg font-semibold text-slate-50">
-                      {exp.role} · {exp.company}
-                    </h3>
-                    <p className="text-xs md:text-sm text-slate-400">
-                      {exp.location} · {exp.period}
-                    </p>
-
-                    <div className="mt-2 flex flex-wrap gap-1.5">
-                      {exp.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="px-2 py-0.5 rounded-full bg-violet-500/10 text-[10px] uppercase tracking-wide text-violet-200"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  <span className="mt-1 text-slate-400 text-lg md:text-xl">
-                    {isOpen ? "−" : "+"}
-                  </span>
-                </button>
-
-                {isOpen && (
-                  <ul className="mt-3 list-disc list-inside space-y-1.5 text-xs md:text-sm text-slate-200">
-                    {exp.bullets.map((b, i) => (
-                      <li key={i}>{b}</li>
-                    ))}
-                  </ul>
-                )}
-              </article>
-            );
-          })}
-        </div>
-      </section>
-    </Reveal>
-  );
+  const [expanded,setExpanded]=useState<string[]>([profile.experience[0].company]);
+  return <section id="experience" className="section-space bg-slate-50">
+    <div className="container-width">
+      <SectionHeading title="Experience across products, data, and delivery" subtitle="Healthcare software, enterprise platforms, automation, and full-stack delivery."/>
+      <div className="space-y-5">
+        {profile.experience.map((exp,i)=>{
+          const isOpen=expanded.includes(exp.company);
+          return <article key={exp.company} className="rounded-lg border border-slate-200 bg-white p-5 md:p-7">
+            <button className="flex w-full items-start justify-between gap-4 text-left" aria-expanded={isOpen} aria-controls={`experience-details-${i}`} onClick={()=>setExpanded(prev=>isOpen?prev.filter(x=>x!==exp.company):[...prev,exp.company])}>
+              <span><span className="block text-xl font-bold text-slate-950">{exp.company}</span><span className="mt-2 block font-semibold text-cyan-800">{exp.role}</span><span className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600"><span className="inline-flex items-center gap-2"><MapPin size={14}/>{exp.location}</span><span className="inline-flex items-center gap-2"><Calendar size={14}/>{exp.period}</span></span></span>
+              <ChevronDown className={`mt-1 shrink-0 transition-transform ${isOpen?"rotate-180":""}`} size={20}/>
+            </button>
+            {isOpen&&<div id={`experience-details-${i}`} className="mt-6 border-t border-slate-100 pt-5"><ul className="list-disc space-y-3 pl-5 text-sm leading-7 text-slate-700">{exp.bullets.map(b=><li key={b}>{b}</li>)}</ul><div className="mt-5 flex flex-wrap gap-2">{exp.tags.map(t=><span className="chip" key={t}>{t}</span>)}</div></div>}
+          </article>;
+        })}
+      </div>
+    </div>
+  </section>;
 };
-
 export default ExperienceSection;
