@@ -273,7 +273,7 @@
         "Threshold alerts with cooldowns to reduce noisy notifications",
         "Docker Compose setup for repeatable local development"
       ],
-      "github": "https://github.com/ShreyaMP1999",
+      "github": "https://github.com/ShreyaMP1999/micro-observer",
       "demo": "#contact",
       "image": "system-monitor",
       "category": "Observability",
@@ -377,7 +377,7 @@
         "React dashboard for live worker and task visibility",
         "PyTest coverage around scheduling and recovery behavior"
       ],
-      "github": "https://github.com/ShreyaMP1999",
+      "github": "https://github.com/ShreyaMP1999/distributed-task-scheduler",
       "demo": "#contact",
       "image": "task-scheduler",
       "category": "Distributed Systems",
