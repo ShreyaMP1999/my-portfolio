@@ -1,0 +1,610 @@
+{
+  "achievements": [
+    {
+      "id": "ownership",
+      "title": "Led delivery that increased adoption",
+      "organization": "Accenture",
+      "year": "2021-23",
+      "description": "Led an Angular and TypeScript visualization module for 200+ users across 5 business units, increasing feature adoption from 23% to 63%.",
+      "order": 1
+    },
+    {
+      "id": "latency",
+      "title": "Production Performance Impact",
+      "organization": "Leap of Faith Technologies",
+      "year": "2025-26",
+      "description": "Reduced average response latency by about 40% and P1 incidents by 45% through indexing, structured logging, and service tuning.",
+      "order": 2
+    },
+    {
+      "id": "cloud",
+      "title": "Healthcare pipelines at lower cost",
+      "organization": "Leap of Faith Technologies",
+      "year": "2025-26",
+      "description": "Processed 10,000+ FHIR clinical records with Docker and AWS while reducing compute costs by 90%.",
+      "order": 3
+    },
+    {
+      "id": "clinical",
+      "title": "Clinical scoring validated against expert review",
+      "organization": "Leap of Faith Technologies",
+      "year": "2025-26",
+      "description": "Built a pulmonary embolism risk-scoring engine with 94% agreement across 167 clinician-validated cases.",
+      "order": 4
+    },
+    {
+      "id": "supportpilot-eval",
+      "title": "RAG retrieval and support routing",
+      "organization": "SupportPilot",
+      "year": "AI project",
+      "description": "93.5% Recall@1 and 0.963 MRR; 99.1% routing accuracy on a 108-ticket evaluation set across 27 intents.",
+      "order": 5
+    },
+    {
+      "id": "sherlog-eval",
+      "title": "Evidence-grounded incident diagnosis",
+      "organization": "Sherlog",
+      "year": "AI project",
+      "description": "100% root-cause accuracy on 12 synthetic incidents versus a 58.3% log-only baseline, backed by 26 automated tests.",
+      "order": 6
+    },
+    {
+      "id": "automation",
+      "title": "Regression Automation",
+      "organization": "Bio-Rad Laboratories",
+      "year": "2026",
+      "description": "Reduced instrument-data processing time by 60%, saving 4-5 hours weekly; cut regression validation from a full day to under 2 hours with 25+ parameterized scenarios.",
+      "order": 7
+    }
+  ],
+  "education": [
+    {
+      "id": "iit-ms",
+      "degree": "Master of Science in Computer Science",
+      "school": "Illinois Institute of Technology",
+      "location": "Chicago, IL",
+      "duration": "May 2025",
+      "gpa": "3.5/4.0",
+      "relevant_courses": [
+        "Machine Learning",
+        "Software Engineering",
+        "Digital Healthcare Informatics and AI"
+      ],
+      "achievements": [],
+      "order": 1
+    }
+  ],
+  "experience": [
+    {
+      "id": "bio-rad",
+      "company": "Bio-Rad Laboratories",
+      "position": "Software Engineer",
+      "duration": "March 2026 - September 2026",
+      "location": "Hercules, CA",
+      "type": "Full-time",
+      "responsibilities": [
+        "Built Python data processing pipelines for large instrument-data batches with multiprocessing and automated output routing, cutting processing time by about 60%.",
+        "Designed a modular Selenium and PyTest automation framework for the Reagent Probe Carryover web tool, reducing regression testing from a full day to under 2 hours.",
+        "Parsed instrument logs and Excel outputs with Python to compare actual results against expected values and speed up root-cause analysis.",
+        "Debugged 30+ issues across BioPlex Data Tools applications by tracing behavior through UI flows, browser tools, logs, and calculation outputs.",
+        "Verified clinical-statistical logic including Deming regression, Passing-Bablok regression, one-way ANOVA, and Wilson score confidence intervals across 4 clinical tools and 100+ test cases.",
+        "Used Claude and Codex for automation development, data parsing, log analysis, and Jira defect report drafting."
+      ],
+      "technologies": [
+        "Python",
+        "Selenium",
+        "PyTest",
+        "Pandas",
+        "Excel",
+        "Log Parsing",
+        "Jira",
+        "Jama",
+        "Veeva",
+        "Git"
+      ],
+      "order": 1
+    },
+    {
+      "id": "leap-of-faith",
+      "company": "Leap of Faith Technologies",
+      "position": "Software Engineer",
+      "duration": "May 2025 - March 2026",
+      "location": "Chicago, IL",
+      "type": "Full-time",
+      "responsibilities": [
+        "Built and maintained Python FastAPI microservices backed by PostgreSQL, supporting 90+ concurrent users with async endpoints, task queuing, and FHIR-based healthcare data handling.",
+        "Improved two production services with database indexes and structured logging, cutting average response latency by about 40% and P1 incidents by 45%.",
+        "Developed a REST API eligibility engine that flags pulmonary embolism risk from demographic and clinical criteria, matching clinician review in 94% of 167 validated cases.",
+        "Built a React and TypeScript review dashboard where clinical users could search, filter, and review flagged patient cases with smooth loading and error states.",
+        "Containerized a healthcare data pipeline on AWS EC2 with S3 storage, using Docker workers to process 10,000+ clinical records while cutting compute costs by 90%."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "React",
+        "TypeScript",
+        "Docker",
+        "AWS EC2",
+        "S3",
+        "GitHub Actions",
+        "FHIR"
+      ],
+      "order": 2
+    },
+    {
+      "id": "accenture",
+      "company": "Accenture Solutions Pvt. Limited",
+      "position": "Software Engineer",
+      "duration": "August 2021 - July 2023",
+      "location": "India",
+      "type": "Full-time",
+      "responsibilities": [
+        "Built full-stack features for an enterprise Client Insights platform using Angular, TypeScript, .NET Core REST APIs, and SQL Server for 200+ daily users.",
+        "Led a data visualization module with reusable Angular components, RxJS async flows, and optimized SQL aggregation logic, raising adoption from 23% to 63%.",
+        "Designed a .NET Core microservice for template-based PDF generation, producing 500+ branded reports per month and saving about 15 hours weekly.",
+        "Raised test coverage from 58% to 84% with unit tests and Selenium end-to-end suites, then used that coverage to catch and fix 70+ production defects.",
+        "Rebuilt Azure DevOps CI/CD pipelines with caching and parallel jobs, cutting deployment time from 60 to 32 minutes and reducing rollback incidents by 67%."
+      ],
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        "RxJS",
+        ".NET Core",
+        "C#",
+        "SQL Server",
+        "REST APIs",
+        "Azure DevOps",
+        "Selenium",
+        "Git"
+      ],
+      "order": 3
+    }
+  ],
+  "personalInfo": {
+    "id": "personal-info",
+    "name": "Shreya Padaganur",
+    "title": "Software Engineer | Full-Stack, AI & Data",
+    "location": "San Ramon, CA | Open to relocation",
+    "email": "shreyamp1999@gmail.com",
+    "phone": "+1 (312) 774-9512",
+    "linkedin": "https://www.linkedin.com/in/shreyamp/",
+    "github": "https://github.com/ShreyaMP1999",
+    "bio": "Software engineer with approximately four years of experience across healthcare and enterprise systems. I build React and Angular interfaces, Python and .NET services, data pipelines, and applied AI tools. I bring a product mindset to engineering: understand the stakeholder, own the delivery, and measure what improves.",
+    "tagline": "I turn complex problems into useful products, connecting full-stack development, applied AI, and data engineering with a focus on people and business impact."
+  },
+  "projects": [
+    {
+      "id": "enterprise-insights",
+      "title": "Client Insights Platform",
+      "description": "Enterprise dashboards and reporting built with Angular, TypeScript, .NET Core, and SQL Server for 200+ users across five business units.",
+      "long_description": "Professional work at Accenture. Led the data visualization module, built reusable Angular components, and optimized backend aggregation logic. Adoption increased from 23% to 63%. A template-based PDF microservice produced 500+ branded reports monthly and saved 15 hours of manual effort each week.",
+      "technologies": [
+        "Angular",
+        "TypeScript",
+        ".NET Core",
+        "C#",
+        "SQL Server",
+        "Azure DevOps"
+      ],
+      "features": [
+        "Led development of the visualization module",
+        "Reusable components and optimized SQL aggregation",
+        "Adoption increased from 23% to 63%",
+        "500+ branded reports generated each month",
+        "15 hours of manual reporting saved weekly"
+      ],
+      "github": "",
+      "demo": "#contact",
+      "image": "system-monitor",
+      "category": "Enterprise",
+      "impact": "Adoption: 23% to 63%",
+      "workflow": [
+        "Business needs",
+        "Dashboards + APIs",
+        "Adoption + reporting"
+      ],
+      "evaluation": "Professional work at Accenture: 200+ users across 5 business units",
+      "order": 1,
+      "focus": [
+        "Full-Stack",
+        "Data",
+        "Leadership"
+      ],
+      "kind": "Professional Work"
+    },
+    {
+      "id": "supportpilot",
+      "title": "SupportPilot",
+      "description": "A support triage and RAG reply engine combining hybrid retrieval, citation-grounded Claude replies, PII redaction, and confidence-based escalation.",
+      "long_description": "TF-IDF and MiniLM embeddings classify approximately 24,000 deduplicated messages across 27 intents. On a 108-ticket evaluation set, intent accuracy was 90.7% and team routing accuracy was 99.1%. Intent accuracy reached 96.2% on the 72% of evaluated tickets selected for automated handling.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Claude API",
+        "Sentence-Transformers",
+        "scikit-learn",
+        "Docker"
+      ],
+      "features": [
+        "Hybrid TF-IDF and MiniLM retrieval",
+        "93.5% Recall@1 and 0.963 MRR",
+        "90.7% intent accuracy on 108 evaluated tickets",
+        "99.1% team-routing accuracy on the evaluation set",
+        "PII redaction and confidence-based human escalation"
+      ],
+      "github": "https://github.com/ShreyaMP1999/supportpilot",
+      "demo": "#contact",
+      "image": "system-monitor",
+      "category": "RAG & Search",
+      "impact": "93.5% Recall@1",
+      "order": 2,
+      "workflow": [
+        "Support ticket",
+        "Hybrid retrieval",
+        "Reply or escalate"
+      ],
+      "evaluation": "108-ticket evaluation: 90.7% intent / 99.1% routing accuracy",
+      "focus": [
+        "AI",
+        "Data"
+      ],
+      "kind": "Personal Project"
+    },
+    {
+      "id": "micro-observer",
+      "title": "Micro-Observer",
+      "description": "A real-time system monitoring dashboard with FastAPI metric collection, PostgreSQL persistence, React charts, and alert cooldowns.",
+      "long_description": "Micro-Observer turns raw machine telemetry into a live operations view. A FastAPI service collects CPU, memory, and process metrics every 5 seconds, stores historical readings with SQLAlchemy/PostgreSQL, and streams useful slices to a React and TypeScript dashboard with Recharts visualizations and threshold-based alerting.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "SQLAlchemy",
+        "PostgreSQL",
+        "React",
+        "TypeScript",
+        "Recharts",
+        "Docker"
+      ],
+      "features": [
+        "Live metric collection every 5 seconds",
+        "Historical system telemetry persisted in PostgreSQL",
+        "Interactive Recharts dashboards for fast trend scanning",
+        "Threshold alerts with cooldowns to reduce noisy notifications",
+        "Docker Compose setup for repeatable local development"
+      ],
+      "github": "https://github.com/ShreyaMP1999",
+      "demo": "#contact",
+      "image": "system-monitor",
+      "category": "Observability",
+      "impact": "Live systems visibility",
+      "order": 3,
+      "focus": [
+        "Full-Stack",
+        "Data"
+      ],
+      "kind": "Personal Project"
+    },
+    {
+      "id": "clinical-risk-engine",
+      "title": "Clinical Risk Eligibility Engine",
+      "description": "A healthcare REST API and review workflow that flags pulmonary embolism risk from clinical and demographic criteria.",
+      "long_description": "Built from production healthcare experience, this system translates clinical stakeholder rules into a traceable eligibility engine. It combines FastAPI, PostgreSQL, structured logs, and a React review dashboard so clinical teams can search, filter, and validate flagged patient cases.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "React",
+        "TypeScript",
+        "FHIR",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "features": [
+        "Clinical criteria modeled as maintainable API logic",
+        "FHIR-aware healthcare data handling",
+        "Review dashboard with search, filters, and clear loading states",
+        "Structured logging for production debugging",
+        "CI checks for backend tests and frontend builds"
+      ],
+      "github": "",
+      "demo": "#contact",
+      "image": "clinical-engine",
+      "category": "Healthcare",
+      "impact": "94% validation match",
+      "order": 4,
+      "focus": [
+        "Full-Stack",
+        "Data",
+        "Leadership"
+      ],
+      "kind": "Professional Work"
+    },
+    {
+      "id": "sherlog",
+      "title": "Sherlog",
+      "description": "An incident investigation agent that connects logs, metrics, deployments, and runbooks to produce cited diagnoses, and abstains when evidence conflicts.",
+      "long_description": "A bounded LangGraph workflow with four read-only tools. A deterministic evaluation on 12 synthetic incidents achieved 100% root-cause accuracy versus 58.3% for a log-only baseline. This is a small synthetic benchmark, not a production accuracy claim.",
+      "technologies": [
+        "Python",
+        "LangGraph",
+        "Ollama",
+        "GitHub Actions"
+      ],
+      "features": [
+        "Four read-only investigation tools",
+        "Cited diagnoses with evidence checks",
+        "Abstention for incomplete or conflicting evidence",
+        "12 synthetic incident evaluation cases",
+        "26 automated tests"
+      ],
+      "github": "https://github.com/ShreyaMP1999/Sherlog",
+      "demo": "#contact",
+      "image": "task-scheduler",
+      "category": "AI Agents",
+      "impact": "12 synthetic cases evaluated",
+      "order": 5,
+      "workflow": [
+        "Incident",
+        "4 evidence tools",
+        "Cited diagnosis"
+      ],
+      "evaluation": "100% on 12 synthetic cases; 58.3% log-only baseline",
+      "focus": [
+        "AI"
+      ],
+      "kind": "Personal Project"
+    },
+    {
+      "id": "distributed-task-scheduler",
+      "title": "Distributed Task Scheduler",
+      "description": "A fault-tolerant task scheduler with Celery workers, Redis queues, PostgreSQL task state, FastAPI endpoints, retries, and a live React dashboard.",
+      "long_description": "This project focuses on reliability under worker failure. It uses Celery and Redis for distributed execution, PostgreSQL for recoverable task state, priority queues for scheduling, exponential backoff retries, FastAPI endpoints for task control, and a React dashboard for live task tracking.",
+      "technologies": [
+        "Python",
+        "Celery",
+        "Redis",
+        "PostgreSQL",
+        "FastAPI",
+        "React",
+        "TypeScript",
+        "PyTest"
+      ],
+      "features": [
+        "Priority queues and retry policies with exponential backoff",
+        "Persistent task state for crash recovery",
+        "FastAPI control plane for task creation and status checks",
+        "React dashboard for live worker and task visibility",
+        "PyTest coverage around scheduling and recovery behavior"
+      ],
+      "github": "https://github.com/ShreyaMP1999",
+      "demo": "#contact",
+      "image": "task-scheduler",
+      "category": "Distributed Systems",
+      "impact": "Fault-tolerant execution",
+      "order": 6,
+      "focus": [
+        "Full-Stack"
+      ],
+      "kind": "Personal Project"
+    },
+    {
+      "id": "careerlens",
+      "title": "CareerLens",
+      "description": "A job-search copilot that parses resumes, ranks jobs against evidence, identifies skill gaps, and exposes shared capabilities through FastAPI and MCP tools.",
+      "long_description": "CareerLens connects resume parsing, evidence-grounded job ranking, skill-gap analysis, and recruiter outreach generation. Job freshness filtering and duplicate detection keep results useful, while shared endpoints and MCP tools make the workflow available across interfaces.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "MCP",
+        "Streamlit",
+        "Docker",
+        "GitHub Actions"
+      ],
+      "features": [
+        "Resume parsing and evidence-grounded matching",
+        "Skill-gap analysis",
+        "Shared FastAPI endpoints and MCP tools",
+        "Job freshness filters and duplicate detection",
+        "Outreach generation and automated CI testing"
+      ],
+      "github": "https://github.com/ShreyaMP1999/CareerLens",
+      "demo": "#contact",
+      "image": "clinical-engine",
+      "category": "AI Agents",
+      "impact": "FastAPI + MCP",
+      "order": 7,
+      "workflow": [
+        "Resume + jobs",
+        "Evidence ranking",
+        "Match + skill gaps"
+      ],
+      "evaluation": "Freshness filters, duplicate detection, and automated CI tests",
+      "focus": [
+        "AI",
+        "Full-Stack"
+      ],
+      "kind": "Personal Project"
+    },
+    {
+      "id": "bioplex-automation",
+      "title": "BioPlex Automation Framework",
+      "description": "A modular Selenium and PyTest framework for validating clinical web tools, instrument outputs, and statistical calculations.",
+      "long_description": "This framework treats QA as engineering infrastructure. It uses reusable fixtures, parameterized scenarios, Python log parsers, and Excel comparison utilities to validate instrument-data workflows and clinical calculation outputs with less manual effort.",
+      "technologies": [
+        "Python",
+        "Selenium",
+        "PyTest",
+        "Pandas",
+        "Excel",
+        "Jira",
+        "Git"
+      ],
+      "features": [
+        "Reusable Selenium fixtures for stable browser automation",
+        "Parameterized test coverage for 25+ regression scenarios",
+        "Python parsers for logs and instrument output files",
+        "Regression validation reduced from a day to under 2 hours",
+        "Clear defect reports with repro steps and root-cause notes"
+      ],
+      "github": "",
+      "demo": "#contact",
+      "image": "automation-framework",
+      "category": "Automation",
+      "impact": "Regression time under 2 hours",
+      "order": 8,
+      "focus": [
+        "Data",
+        "Leadership"
+      ],
+      "kind": "Professional Work"
+    }
+  ],
+  "skills": [
+    {
+      "id": "languages",
+      "category": "Programming Languages",
+      "skills": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "C#",
+        "Java"
+      ],
+      "order": 1
+    },
+    {
+      "id": "frontend",
+      "category": "Frontend",
+      "skills": [
+        "React",
+        "Angular",
+        "RxJS",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Recharts"
+      ],
+      "order": 2
+    },
+    {
+      "id": "backend",
+      "category": "Backend",
+      "skills": [
+        "FastAPI",
+        ".NET Core",
+        "REST APIs",
+        "Microservices",
+        "Celery",
+        "Redis",
+        "Pydantic",
+        "SQLAlchemy"
+      ],
+      "order": 3
+    },
+    {
+      "id": "evaluation",
+      "category": "Evaluation & Data",
+      "skills": [
+        "Recall@K",
+        "MRR",
+        "Citation Checks",
+        "Model Output Regression",
+        "Pandas",
+        "NumPy",
+        "scikit-learn",
+        "FHIR",
+        "Statistical Validation"
+      ],
+      "order": 4
+    },
+    {
+      "id": "ai",
+      "category": "AI & LLM Engineering",
+      "skills": [
+        "LangGraph",
+        "LangChain",
+        "RAG",
+        "Claude API",
+        "Ollama",
+        "MCP",
+        "Prompt Engineering",
+        "Semantic Search",
+        "Sentence-Transformers",
+        "TF-IDF"
+      ],
+      "order": 5
+    },
+    {
+      "id": "cloud-devops",
+      "category": "Cloud & DevOps",
+      "skills": [
+        "AWS EC2",
+        "AWS S3",
+        "Docker",
+        "Docker Compose",
+        "GitHub Actions",
+        "Azure DevOps",
+        "Linux",
+        "Git"
+      ],
+      "order": 6
+    },
+    {
+      "id": "databases",
+      "category": "Databases",
+      "skills": [
+        "PostgreSQL",
+        "SQL Server",
+        "MySQL",
+        "Google BigQuery"
+      ],
+      "order": 7
+    },
+    {
+      "id": "quality",
+      "category": "Testing & Quality",
+      "skills": [
+        "PyTest",
+        "Selenium",
+        "Unit Testing",
+        "E2E Testing",
+        "Log Parsing",
+        "Jira",
+        "Jama"
+      ],
+      "order": 8
+    },
+    {
+      "id": "delivery",
+      "category": "Leadership & Delivery",
+      "skills": [
+        "Feature Ownership",
+        "Clinical Stakeholder Collaboration",
+        "Reusable Component Design",
+        "CI/CD Improvement",
+        "Defect Triage",
+        "Outcome Measurement"
+      ],
+      "order": 9
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/shreyamp/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/ShreyaMP1999",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:shreyamp1999@gmail.com",
+      "icon": "mail"
+    }
+  ]
+}
