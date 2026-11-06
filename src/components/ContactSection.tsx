@@ -42,6 +42,9 @@ const ContactSection: React.FC = () => {
           {draftRequested&&<p role="status" className="text-sm leading-6 text-cyan-800">Your email app was requested to open a draft. You can also contact {profile.email} directly.</p>}
         </form>
       </div>
+      <p className="mt-6 text-xs leading-5 text-slate-600">
+        Tagged links may send the site owner an anonymous visit alert. These alerts use no cookies and do not include your identity.
+      </p>
     </div>
   </section>;
 };
